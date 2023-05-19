@@ -6,7 +6,6 @@ use Models\Cart;
 $carts = new Cart('', '', '', '');
 $carts->setConnection($connection);
 $all_carts = $carts->getCartItems(1);
-//var_dump(empty($all_carts));
 
 if(count($all_carts)===0){
     $template = $mustache->loadTemplate('cart.mustache');
@@ -23,7 +22,7 @@ if(count($all_carts)===0){
         $p = array_push($prices,$product_price);
     }
     $total = intval($prices[1]) + intval($prices[2]);
-    $cart_total = number_format(($total/100),2);
+    $cart_total = number_format($total,2);
     
     $template = $mustache->loadTemplate('cart.mustache');
     echo $template->render(compact('all_carts','cart_total'));

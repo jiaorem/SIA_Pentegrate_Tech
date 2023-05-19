@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2023 at 03:53 PM
+-- Generation Time: May 16, 2023 at 04:19 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -47,15 +47,6 @@ CREATE TABLE `ptg_orders` (
   `order_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `ptg_orders`
---
-
-INSERT INTO `ptg_orders` (`order_id`, `user_id`, `order_status`, `order_date`) VALUES
-(26, 1, 'Checked Out', '2023-05-14'),
-(27, 1, 'Checked Out', '2023-05-14'),
-(28, 1, 'Checked Out', '2023-05-15');
-
 -- --------------------------------------------------------
 
 --
@@ -68,18 +59,6 @@ CREATE TABLE `ptg_order_details` (
   `product_id` int(11) NOT NULL,
   `product_quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `ptg_order_details`
---
-
-INSERT INTO `ptg_order_details` (`id`, `order_id`, `product_id`, `product_quantity`) VALUES
-(23, 26, 1, 2),
-(24, 26, 2, 11),
-(25, 27, 1, 22),
-(26, 27, 2, 1),
-(27, 28, 1, 5),
-(28, 28, 2, 11);
 
 -- --------------------------------------------------------
 
