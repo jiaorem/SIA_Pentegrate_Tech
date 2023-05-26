@@ -1,279 +1,537 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
+<!-- Head -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
 
-    <!-- Title  -->
-    <title>Pentegrate Tech | Home</title>
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
 
-    <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/css/libs.bundle.css" />
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>OldSkool | Bootstrap 5 HTML Template</title>
 
 </head>
+<body class="">
 
-<body>
-    <div id="wrapper">
-
-        <!-- ****** Header Area Start ****** -->
-        <header class="header_area" >
-            <!-- Top Header Area Start -->
-            <div class="top_header_area" style="background-color: #2d3134; height: 100px;">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-end">
-
-                        <div class="col-12 col-lg-7">
-                            <div class="top_single_area d-flex align-items-center">
-                                <!-- Logo Area -->
-                                <div class="top_logo">
-                                    <a href="#"><img src="" alt=""></a>
-                                </div>
-                            </div>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+    
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="index.php">
+                        <div class="d-flex align-items-center">
+                            <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </div>
+                    </a>
+                    <!-- / Logo-->
+    
+                    <!-- Navbar Icons-->
+                    <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
+    
+                        <!-- Mobile Nav Toggler-->
+                        <li class="d-lg-none">
+                            <span class="nav-link text-body d-flex align-items-center cursor-pointer" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menu</span>
+                        </li>
+                        <!-- /Mobile Nav Toggler-->
+    
+                        <!-- Navbar Search-->
+                        
+                        <!-- /Navbar Search-->
 
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="index.php">
+                                HOME
+                            </a>
+                        </li>
+    
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="product.php">
+                                Products
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+    
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="cart.php">
+                                BAG
+                            </a>
+                        </li>
+                        <!-- /Navbar Cart Icon-->
+    
+                    </ul>
+                    <!-- Navbar Icons-->                
+    
+                    <!-- Main Navigation-->
+                    <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                        id="navbarNavDropdown">
+    
+                       
                     </div>
+                    <!-- / Main Navigation-->
+    
                 </div>
             </div>
+        </div>
+    </nav>
+    <!-- / Navbar-->    <!-- / Navbar-->
 
-            <!-- Top Header Area End -->
-            <div class="main_header_area" >
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-12 d-md-flex justify-content-between">
-                            <!-- Header Social Area -->
-                            <div class="header-social-area">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <!-- Main Section-->
+    <section class="mt-0 overflow-hidden ">
+        <!-- Page Content Goes Here -->
+
+        <!-- / Top banner -->
+        <section class="vh-75 vh-lg-60 container-fluid rounded overflow-hidden" data-aos="fade-in">
+            <!-- Swiper Info -->
+            <div class="swiper-container overflow-hidden rounded h-100 bg-light" data-swiper data-options='{
+              "spaceBetween": 0,
+              "slidesPerView": 1,
+              "effect": "fade",
+              "speed": 1000,
+              "loop": true,
+              "parallax": true,
+              "observer": true,
+              "observeParents": true,
+              "lazy": {
+                "loadPrevNext": true
+                },
+                "autoplay": {
+                  "delay": 5000,
+                  "disableOnInteraction": false
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "clickable": true
+                }
+              }'>
+              <div class="swiper-wrapper">
+            
+                <!-- Slide-->
+                <div class="swiper-slide position-relative h-100 w-100">
+                  <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
+                    <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
+                      style=" will-change: transform; background-image: url(https://wallpaperaccess.com/full/2126190.png)">
+                    </div>
+                  </div>
+                  <div
+                    class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
+                    <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Everything You Need</p>
+                    <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
+                      <span class="text-outline-light">GAMING </span> KEYBOARDS</h2>
+                    <div data-swiper-parallax-y="-25">
+                      <a href="product.php" class="btn btn-psuedo text-white" role="button">Shop New Arrivals</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Slide-->
+            
+                <!-- Slide-->
+                <div class="swiper-slide position-relative h-100 w-100">
+                  <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
+                    <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
+                      style=" will-change: transform; background-image: url(http://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/272297870_7434264469946910_8288886451600324465_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=UsLFkw8jnowAX_pKLv0&_nc_ht=scontent.fmnl3-4.fna&oh=00_AfAXz8Re61_K3m_twm_G7sf19L98hsc3rpIN2l86cYtiTA&oe=646BABA7)">
+                    </div>
+                  </div>
+                  <div
+                    class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
+                    <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Spring Collection</p>
+                    <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
+                      Corsair <span class="text-outline-light">KEYBOARDS</span></h2>
+                    <div data-swiper-parallax-y="-25">
+                      <a href="product-page.php?product_id=1" class="btn btn-psuedo text-white" role="button">Shop Latest Corsair</a>
+                    </div>
+                  </div>
+                </div>
+                <!--/Slide-->
+            
+                <!-- Slide-->
+                <div class="swiper-slide position-relative h-100 w-100">
+                  <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
+                    <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
+                      style=" will-change: transform; background-image: url(https://wallpaperaccess.com/full/4571140.jpg)">
+                    </div>
+                  </div>
+                  <div
+                    class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
+                    <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Just Do it</p>
+                    <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
+                      LOGITECH<span class="text-outline-light">KEYBOARDS</span></h2>
+                    <div data-swiper-parallax-y="-25">
+                      <a href="product-page.php?product_id=2" class="btn btn-psuedo text-white" role="button">Shop Latest Logitech</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Slide-->
+            
+                <!--Slide-->
+                <div class="swiper-slide position-relative h-100 w-100">
+                  <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
+                    <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
+                      style=" will-change: transform; background-image: url(https://wallpaper.dog/large/20549281.jpg)">
+                    </div>
+                  </div>
+                  <div
+                    class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
+                    <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Look Good Feel Good</p>
+                    <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
+                      <span class="text-outline-light">Customizable</span> Keys</h2>
+                    <div data-swiper-parallax-y="-25">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!--/Slide-->
+            
+              </div>
+            
+              <div class="swiper-pagination swiper-pagination-bullet-light"></div>
+            
+            </div>
+            <!-- / Swiper Info-->        </section>
+        <!--/ Top Banner-->
+
+        <!-- Featured Brands-->
+        <div class="brand-section container-fluid" data-aos="fade-in">
+            <div class="bg-overlay-sides-white-to-transparent bg-white py-5 py-md-7">
+                <section class="marquee marquee-hover-pause">
+                    <div class="marquee-body">
+                        <div class="marquee-section animation-marquee-50">
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
                             </div>
-                            <!-- Menu Area -->
-                            <div class="main-menu-area">
-                                <nav class=" navbar-expand-lg ">
-                                    <div id="karl-navbar">
-                                        <ul class="navbar-nav animated" id="nav">
-                                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="product.php">Products</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/brands/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-3 mx-lg-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="marquee-section animation-marquee-50">
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=2">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Corsair-logo.svg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="mx-5 f-w-24">
+                                <a class="d-block" href="product-page.php?product_id=1">
+                                    <picture>
+                                        <img class="img-fluid d-table mx-auto" src="assets/images/logos/Logitech-Symbol.svg" alt="">
+                                    </picture>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </section>
+            </div>
+        </div>
+        <!--/ Featured Brands-->
+
+        <div class="container-fluid">
+
+            <!-- Featured Categories-->
+            <div class="m-0">
+                    <!-- Swiper Latest -->
+                    <div class="swiper-container overflow-hidden overflow-lg-visible"
+                      data-swiper
+                      data-options='{
+                        "spaceBetween": 25,
+                        "slidesPerView": 1,
+                        "observer": true,
+                        "observeParents": true,
+                        "breakpoints": {     
+                          "540": {
+                            "slidesPerView": 1,
+                            "spaceBetween": 0
+                          },
+                          "770": {
+                            "slidesPerView": 2
+                          },
+                          "1024": {
+                            "slidesPerView": 3
+                          },
+                          "1200": {
+                            "slidesPerView": 4
+                          },
+                          "1500": {
+                            "slidesPerView": 5
+                          }
+                        },   
+                        "navigation": {
+                          "nextEl": ".swiper-next",
+                          "prevEl": ".swiper-prev"
+                        }
+                      }'>
+                      <div class="swiper-wrapper" style="margin-left: 150px;">
+                          <div class="swiper-slide align-self-stretch bg-transparent h-auto">
+                            <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="000">
+                                <picture class="d-block mb-4 img-clip-shape-one">
+                                    <img class="w-100" title="" src="./assets/images/categories/logitech7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                </picture>
+                                <p class="title-small mb-2 text-muted">Must Haves</p>
+                                <h4 class="lead fw-bold">Premium Keyboard</h4>
+                                <a href="product.php" class="btn btn-psuedo align-self-start">Shop Now</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide align-self-stretch bg-transparent h-auto">
+                            <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="100">
+                                <picture class="d-block mb-4 img-clip-shape-one">
+                                    <img class="w-100" title="" src="./assets/images/categories/corsair2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                </picture>
+                                <p class="title-small mb-2 text-muted">Curated Selection</p>
+                                <h4 class="lead fw-bold">Our Favourites</h4>
+                                <a href="product.php" class="btn btn-psuedo align-self-start">Shop Now</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide align-self-stretch bg-transparent h-auto">
+                            <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="200">
+                                <picture class="d-block mb-4 img-clip-shape-one">
+                                    <img class="w-100" title="" src="./assets/images/categories/corsair.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                </picture>
+                                <p class="title-small mb-2 text-muted">Mechanical</p>
+                                <h4 class="lead fw-bold">Sales</h4>
+                                <a href="product.php" class="btn btn-psuedo align-self-start">Shop Now</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide align-self-stretch bg-transparent h-auto">
+                            <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="300">
+                                <picture class="d-block mb-4 img-clip-shape-one">
+                                    <img class="w-100" title="" src="./assets/images/categories/logitech6.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                </picture>
+                                <p class="title-small mb-2 text-muted"> Lightweight</p>
+                                <h4 class="lead fw-bold">Bettter Experience</h4>
+                                <a href="product.php" class="btn btn-psuedo align-self-start">Shop Now</a>
+                            </div>
+                          </div>
+                
+                          
+                      </div>
+                    
+                      <div class="swiper-btn swiper-prev swiper-disabled-hide swiper-btn-side btn-icon bg-white text-dark ms-3 shadow mt-n5"><i class="ri-arrow-left-s-line "></i></div>
+                      <div class="swiper-btn swiper-next swiper-disabled-hide swiper-btn-side swiper-btn-side-right btn-icon bg-white text-dark me-3 shadow mt-n5"><i class="ri-arrow-right-s-line ri-lg"></i></div>
+                    
+                    </div>
+                    <!-- / Swiper Latest-->                <!-- SVG Used for Clipath on featured images above-->
+                <svg width="0" height="0">
+                  <defs>
+                  <clipPath id="svg-slanted-one" clipPathUnits="objectBoundingBox">
+                      <path d="M0.822,1 H0.016 a0.015,0.015,0,0,1,-0.016,-0.015 L0.158,0.015 A0.016,0.015,0,0,1,0.173,0 L0.984,0 a0.016,0.015,0,0,1,0.016,0.015 L0.837,0.985 A0.016,0.015,0,0,1,0.822,1"></path>
+                  </clipPath>
+                  </defs>
+                </svg>            </div>
+            <!-- /Featured Categories-->
+
+            <!-- Homepage Intro-->
+            <div class="position-relative row my-lg-7 pt-5 pt-lg-0 g-8">
+                <div class="bg-text bottom-0 start-0 end-0" data-aos="fade-up">
+                    <h2 class="bg-text-title opacity-10"><span class="text-outline-dark">PENTE</span>GRATE</h2>
+                </div>
+                <div class="col-12 col-md-6 position-relative z-index-20 mb-7 mb-lg-0" data-aos="fade-right">
+                    <p class="text-muted title-small">Welcome</p>
+                    <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">PENTEGRATE</span> - Gaming Keyboards Store</h3>
+                    <p class="lead">We are PENTEGRATE, a leading supplier of global keyboard brands, including names such as <b>Corsair</b> and <b>Logitech</b>. </p>
+                    <p class="lead">With worldwide shipping and unbeatable prices - now's a great time to pick out something from our range.</p>
+                    
+                </div>
+                <div class="col-12 col-md-6 position-relative z-index-20 pe-0" data-aos="fade-left">
+                    <picture class="w-50 d-block position-relative z-index-10 border border-white border-4 shadow-lg">
+                        <img class="img-fluid" src="./assets/images/banners/keyboardbanner.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                    </picture>
+                    <picture class="w-60 d-block me-8 mt-n10 shadow-lg border border-white border-4 position-relative z-index-20 ms-auto">
+                        <img class="img-fluid" src="./assets/images/banners/corsairsetup.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                    </picture>
+                    <picture class="w-50 d-block me-8 mt-n7 shadow-lg border border-white border-4 position-absolute top-0 end-0 z-index-0 ">
+                        <img class="img-fluid" src="./assets/images/banners/logitechsetup.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                    </picture>
                 </div>
             </div>
-        </header>
-        <!-- ****** Header Area End ****** -->
+            <!-- / Homepage Intro-->
 
-        <!-- ****** Top Catagory Area Start ****** -->
-        <section class="top_catagory_area d-md-flex clearfix">
-            <!-- Single Catagory -->
-            <div class="single_catagory_area d-flex align-items-center bg-img" style="background-image: url(images/corsair2.jpg);">
-                <div class="catagory-content">
-                    <h6>{{ product_description}}</h6>
-                    <h2>CORSAIR</h2>
-                    <a href="#product1" class="btn karl-btn">SHOP NOW</a>
+           
+
+            
+
+        </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    <footer class="border-top py-5 mt-4  ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-twitter-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-snapchat-fill"></i></a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="small m-0 text-center text-lg-start">&copy; 2023 PENTEGRATE All Rights Reserved. </p>
+                   
                 </div>
             </div>
-            <!-- Single Catagory -->
-            <div class="single_catagory_area d-flex align-items-center bg-img" style="background-image: url(images/logitech7.jpg);">
-                <div class="catagory-content">
-                    <h6>{{ product_description}}</h6>
-                    <h2>LOGITECH</h2>
-                    <a href="#product2" class="btn karl-btn">SHOP NOW</a>
-                </div>
-            </div>
-        </section>
-        <!-- ****** Top Catagory Area End ****** -->
+        </div>
+    </footer>    <!-- / Footer-->
 
-        <!-- ****** Offer Area Start ****** -->
-        {{#all_products}}
-        <section id="product{{product_id}}" class="offer_area height-700 section_padding_100 bg-img" style="background-image: url({{product_image}}); background-size: auto;">
-            <div class="container h-100">
-                <div class="row h-100 align-items-end justify-content-end">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <div class="offer-content-area wow fadeInUp" data-wow-delay="1s">
-                            <h2>{{product_name}}<span class="karl-level">Hot</span></h2>
-                            <p>{{product_description}}</p>
-                            <div class="offer-product-price">
-                                <h3><span class="regular-price">$2550.90</span>{{product_price}}</h3>
-                            </div>
-                            <a href="product-page.php?product_id={{product_id}}" class="btn karl-btn mt-30">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {{/all_products}}
-        <!-- ****** Offer Area End ****** -->
 
-        <!-- ****** Popular Brands Area Start ****** -->
-        <section class="karl-testimonials-area section_padding_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section_heading text-center">
-                            <h2>Testimonials</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8">
-                        <div class="karl-testimonials-slides owl-carousel">
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- ****** Popular Brands Area End ****** -->
-
-        <!-- ****** Footer Area Start ****** -->
-        <footer class="footer_area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="single_footer_area">
-                            <div class="footer-logo">
-                                <img src="img/core-img/logo.png" alt="">
-                            </div>
-                            <div class="copywrite_text d-flex align-items-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Our Policies</a></li>
-                                <li><a href="#">Afiliates</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-lg-5">
-                        <div class="single_footer_area">
-                            <div class="footer_heading mb-30">
-                                <h6>Subscribe to our newsletter</h6>
-                            </div>
-                            <div class="subscribtion_form">
-                                <form action="#" method="post">
-                                    <input type="email" name="mail" class="mail" placeholder="Your email here">
-                                    <button type="submit" class="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-
-                <!-- Footer Bottom Area Start -->
-                <div class="footer_bottom_area">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="footer_social_area text-center">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ****** Footer Area End ****** -->
-    </div>
-    <!-- /.wrapper end -->
-
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
 </body>
 
 </html>

@@ -1,270 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
+<!-- Head -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
 
-    <!-- Title  -->
-    <title>Karl - Fashion Ecommerce Template | Cart</title>
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
 
-    <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/css/libs.bundle.css" />
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title> Pentegrate Tech | Cart </title>
 
 </head>
+<body class="">
 
-<body>
+    <!-- Main Section-->
+    <section class="mt-0 overflow-lg-hidden  vh-lg-100">
+        <!-- Page Content Goes Here -->
+        <div class="container">
+            <div class="row g-0 vh-lg-100">
+                <div class="col-12 col-lg-7 pt-5 pt-lg-10">
+                    <div class="pe-lg-5">
+                        <!-- Logo-->
+                        <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="index.php">
+                            <div class="d-flex align-items-center">
+                                <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
+                            </div>
+                        </a>
+                        <!-- / Logo-->
+                        <nav class="d-none d-md-block">
+                            <ul class="list-unstyled d-flex justify-content-start mt-4 align-items-center fw-bolder small">
+                                <li class="me-4"><a class="nav-link-checkout active" href="cart.php">Your Cart</a></li>
+                            </ul>
+                        </nav>                        
+                            <div class="mt-5">
+                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Your Cart</h3>
+                                <div class="table-responsive">
+                                    <table class="table align-middle">
+                                        <tbody class="border-0">
+                                        {{# all_carts }}
+                                            <div class="row mx-0 py-4 g-0 border-bottom">
+                                                <div class="col-2 position-relative">
+                                                    <a href="product-page.php?product_id={{product_id}}"><img class="img-fluid" src="{{product_image}}" alt="Product"></a>
+                                                </div>
+                                                <div class="col-9 offset-1">
+                                                    <div>
+                                                        <h6 class="justify-content-between d-flex align-items-start mb-2"> {{ product_name }} </h6>
+                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9"> Qty: {{ cart_item_quantity }}</span>
+                                                    </div>
+                                                    <p class="fw-bolder text-end text-muted m-0">{{ product_price }}</p>
+                                                </div>
+                                            </div>        
+                                        {{/ all_carts }}                            
+                                        </tbody>
+                                    </table>
+                                </div>
 
-<div id="wrapper">
-
-        <!-- ****** Header Area Start ****** -->
-        <header class="header_area" >
-            <!-- Top Header Area Start -->
-            <div class="top_header_area" style="background-color: #2d3134; height: 100px;">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-end">
-
-                        <div class="col-12 col-lg-7">
-                            <div class="top_single_area d-flex align-items-center">
-                                <!-- Logo Area -->
-                                <div class="top_logo">
-                                    <a href="#"><img src="" alt=""></a>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <div>
+                                        <a href="index.php" class="btn btn-dark">Continue Shopping</a>
+                                    </div>
+                                    <div>
+                                        <a href="delete-cart.php" class="btn btn-danger">Clear Cart</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </nav>
                     </div>
                 </div>
-            </div>
-
-            <!-- Top Header Area End -->
-            <div class="main_header_area" >
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-12 d-md-flex justify-content-between">
-                            <!-- Header Social Area -->
-                            <div class="header-social-area">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                            <!-- Menu Area -->
-                            <div class="main-menu-area">
-                                <nav class=" navbar-expand-lg ">
-                                    <div id="karl-navbar">
-                                        <ul class="navbar-nav animated" id="nav">
-                                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="index.php">Products</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
+                <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
+                    <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
+                        <div class="pb-4 border-bottom">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-between mb-4 mb-md-2">
+                                <div>
+                                    <p class="m-0 fw-bold fs-5">Grand Total</p>
+                                </div>
+                                <p class="m-0 fs-5 fw-bold">{{cart_total}}</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- ****** Header Area End ****** -->
-
-        <!-- ****** Cart Area Start ****** -->
-        <div class="cart_area section_padding_100 clearfix" style="padding: 0 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cart-table clearfix">
-                            <table class="table table-responsive">
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {{# all_carts }}
-                                    <tr>
-                                        <td class="cart_product_img d-flex align-items-center">
-                                        <input type="hidden" name="product_id" value ="{{product_id}}"/>
-                                            <a href="product-page.php?product_id={{product_id}}"><img src="{{product_image}}" alt="Product"></a>
-                                            <h6 name="product_name">{{ product_name }}</h6>
-                                        </td>
-                                        <td class="price" name="product_price"><span> {{ product_price }}</span></td>
-                                        <td class="qty" name="cart_item_quantity"><span> {{ cart_item_quantity }}</span></td>
-                                        <td class="total_price" name="total_price"><span>{{ total_price }}</span></td>
-                                    </tr>
-                                    {{/ all_carts }}
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="cart-footer d-flex mt-30">
-                            <div class="back-to-shop w-50">
-                                <a href="index.php">Continue shopping</a>
-                            </div>
-                            <div class="update-checkout w-50 text-right">
-                                <a href="delete-cart.php">clear cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="coupon-code-area mt-70">
-                            <div class="cart-page-heading">
-                                <h5>Coupon code</h5>
-                                <p>Enter your Coupon code</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="shipping-method-area mt-70">
-                            <div class="cart-page-heading">
-                                <h5>Shipping method</h5>
-                                <p>Select the one you want</p>
-                            </div>
-
-                            <div class="custom-control custom-radio mb-30">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio1"><span>Next day delivery</span><span>$4.99</span></label>
-                            </div>
-
-                            <div class="custom-control custom-radio mb-30">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio2"><span>Standard delivery</span><span>$1.99</span></label>
-                            </div>
-
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio3"><span>Personal Pickup</span><span>Free</span></label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4">
-                        <div class="cart-total-area mt-70">
-                            <div class="cart-page-heading">
-                                <h5>Cart total</h5>
-                                <p>Final info</p>
-                            </div>
-                            <form action="checkout.php" method="POST">
-                            <ul class="cart-total-chart">
-                                <li><span>Subtotal</span> <span>{{cart_total}}</span></li>
-                                <li><span>Shipping</span> <span>Free</span></li>
-                                <li><span><strong>Total</strong></span> <span><strong>{{cart_total}}</strong></span></li>
-                                <input type="hidden" name="cart_total" value ="{{cart_total}}"/>
-                            </ul>
-                            <button type="submit" class="btn karl-checkout-btn">Checkout</button>
-                            </form>
-                        </div>
+                        <a href="checkout.php" class="btn btn-dark w-100 text-center" role="button">Proceed to checkout</a>    
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ****** Cart Area End ****** -->
+    </section>
 
-        <!-- ****** Footer Area Start ****** -->
-        <footer class="footer_area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="single_footer_area">
-                            <div class="footer-logo">
-                                <img src="img/core-img/logo.png" alt="">
-                            </div>
-                            <div class="copywrite_text d-flex align-items-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Our Policies</a></li>
-                                <li><a href="#">Afiliates</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-lg-5">
-                        <div class="single_footer_area">
-                            <div class="footer_heading mb-30">
-                                <h6>Subscribe to our newsletter</h6>
-                            </div>
-                            <div class="subscribtion_form">
-                                <form action="#" method="post">
-                                    <input type="email" name="mail" class="mail" placeholder="Your email here">
-                                    <button type="submit" class="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
 
-                <!-- Footer Bottom Area Start -->
-                <div class="footer_bottom_area">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="footer_social_area text-center">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ****** Footer Area End ****** -->
-    </div>
-    <!-- /.wrapper end -->
 
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
 </body>
 
 </html>
