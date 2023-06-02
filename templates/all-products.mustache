@@ -1,260 +1,466 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
+<!-- Head -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
 
-    <!-- Title  -->
-    <title>Pentegrate Tech | Home</title>
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
 
-    <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>OldSkool | Bootstrap 5 HTML Template</title>
 
 </head>
+<body class="">
 
-<body>
-    <div id="wrapper">
+     <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+    
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                        <div class="d-flex align-items-center">
+                            <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
+                        </div>
+                    </a>
+                    <!-- / Logo-->
+    
+                    <!-- Navbar Icons-->
+                    <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
+    
+                        <!-- Mobile Nav Toggler-->
+                        <li class="d-lg-none">
+                            <span class="nav-link text-body d-flex align-items-center cursor-pointer" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menu</span>
+                        </li>
+                        <!-- /Mobile Nav Toggler-->
+    
+                        <!-- Navbar Search-->
+                        
+                        <!-- /Navbar Search-->
 
-        <!-- ****** Header Area Start ****** -->
-        <header class="header_area" >
-            <!-- Top Header Area Start -->
-            <div class="top_header_area" style="background-color: #2d3134; height: 100px;">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-end">
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./index.html">
+                                HOME
+                            </a>
+                        </li>
+    
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./category.html">
+                                Products
+                            </a>
+                        </li>
 
-                        <div class="col-12 col-lg-7">
-                            <div class="top_single_area d-flex align-items-center">
-                                <!-- Logo Area -->
-                                <div class="top_logo">
-                                    <a href="#"><img src="" alt=""></a>
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./cart.html">
+                                BAG
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+    
+                        <!-- Navbar Cart Icon-->
+                        
+                        <!-- /Navbar Cart Icon-->
+    
+                    </ul>
+                    <!-- Navbar Icons-->                
+    
+                    <!-- Main Navigation-->
+                    <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                        id="navbarNavDropdown">
+    
+                        <!-- Menu-->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            
+                            
+                              <li class="nav-item">
+                                <a class="nav-link" href="./category.html" role="button">
+                                  Sale
+                                </a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
+                                  <li><a class="dropdown-item" href="./category.html">Category</a></li>
+                                  <li><a class="dropdown-item" href="./product.html">Product</a></li>
+                                  <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                  <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                                  <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                                  <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                  <li><a class="dropdown-item" href="./forgotten-password.html">Forgotten Password</a></li>
+                                </ul>
+                              </li>
+                          </ul>                    <!-- / Menu-->
+    
+                    </div>
+                    <!-- / Main Navigation-->
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section-->
+    <section class="mt-0 ">
+        <!-- Page Content Goes Here -->
+        
+        <!-- Category Top Banner -->
+        <div class="py-10 bg-img-cover bg-overlay-dark position-relative overflow-hidden bg-pos-center-center rounded-0"
+            style="background-image: url(https://c4.wallpaperflare.com/wallpaper/162/894/557/neon-keyboards-computer-pc-gaming-wallpaper-preview.jpg);">
+            <div class="container-fluid position-relative z-index-20" data-aos="fade-right" data-aos-delay="300">
+                <h1 class="fw-bold display-6 mb-4 text-white">PRODUCTS</h1>
+                <div class="col-12 col-md-6">
+                    <p class="text-white mb-0 fs-5">
+                        When it's time to game on and use your Keybs, have a look at our latest products. Whether you're into Corsair or Logitech we really have something for everyone!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Category Top Banner -->
+
+        <div class="container-fluid" data-aos="fade-in">
+            <!-- Category Toolbar-->
+                <div class="d-flex justify-content-between items-center pt-5 pb-4 flex-column flex-lg-row">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="category.html">Products</a></li>
+                              
+                            </ol>
+                        </nav>        <h1 class="fw-bold fs-3 mb-2">Gaming Keyboards</h1>
+                        
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center mt-4 mt-lg-0 flex-column flex-md-row">
+                
+                        <!-- Filter Trigger-->
+                        <button class="btn bg-light p-3 me-md-3 d-flex align-items-center fs-7 lh-1 w-100 mb-2 mb-md-0 w-md-auto " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
+                            <i class="ri-equalizer-line me-2"></i> Filters
+                        </button>
+                        <!-- / Filter Trigger-->
+                
+                        <!-- Sort Options-->
+                            <select class="form-select form-select-sm border-0 bg-light p-3 pe-5 lh-1 fs-7">
+                                <option selected>Sort By</option>
+                                <option value="1">Hi Low</option>
+                                <option value="2">Low Hi</option>
+                                <option value="3">Name</option>
+                            </select>
+                        <!-- / Sort Options-->
+                    </div>
+                </div>            <!-- /Category Toolbar-->
+
+            
+            <!-- Products-->
+            <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- Card Product-->
+                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        {{#all_products}}
+                            <div class="card-img position-relative">
+                                <div class="card-badges">
+                                        <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
                                 </div>
+                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                <picture class="position-relative overflow-hidden d-block bg-light">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/logitech.png" alt="">
+                                </picture>
+                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                        <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Add to Cart</button>
+                                    </div>
                             </div>
+                            <div class="card-body px-0">
+                                <a class="text-decoration-none link-cover" href="product-page.php?product_id={{ product_id }}">{{ product_name }}</a>
+                               
+                                        <p class="mt-2 mb-0 small"><s class="text-muted">{{ product_price }}</s> <span class="text-danger">{{ total_price }}</span></p>
+                            </div>
+                        {{/all_products}}
                         </div>
-
+                        <!--/ Card Product-->
                     </div>
+
+            <!-- / Products-->
+            
+
+           
+        </div>
+        
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    <footer class="border-top py-5 mt-4  ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-twitter-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-snapchat-fill"></i></a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="small m-0 text-center text-lg-start">&copy; 2023 PENTEGRATE All Rights Reserved. </p>
+                    
                 </div>
             </div>
-
-            <!-- Top Header Area End -->
-            <div class="main_header_area" >
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-12 d-md-flex justify-content-between">
-                            <!-- Header Social Area -->
-                            <div class="header-social-area">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                            <!-- Menu Area -->
-                            <div class="main-menu-area">
-                                <nav class=" navbar-expand-lg ">
-                                    <div id="karl-navbar">
-                                        <ul class="navbar-nav animated" id="nav">
-                                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#product1">Products</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </footer>    <!-- / Footer-->
+    
+    <!-- Offcanvas Imports-->
+    <!-- Filters Offcanvas-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+      <div class="offcanvas-header pb-0 d-flex align-items-center">
+        <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Category Filters</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column justify-content-between w-100 h-100">
+    
+          <!-- Filters-->
+          <div>
+    
+            <!-- Price Filter -->
+            <div class="py-4 widget-filter widget-filter-price border-top">
+              <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-modal-price" role="button" aria-expanded="true"
+                aria-controls="filter-modal-price">
+                Price
+              </a>
+              <div id="filter-modal-price" class="collapse show">
+                <div class="filter-price mt-6"></div>
+                <div class="d-flex justify-content-between align-items-center mt-7">
+                    <div class="input-group mb-0 me-2 border">
+                        <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                        <input type="number" min="00" max="1000" step="1" class="filter-min form-control-sm border flex-grow-1 text-muted border-0">
+                    </div>   
+                    <div class="input-group mb-0 ms-2 border">
+                        <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                        <input type="number" min="00" max="1000" step="1" class="filter-max form-control-sm flex-grow-1 text-muted border-0">
+                    </div>                
+                </div>          </div>
             </div>
-        </header>
-        <!-- ****** Header Area End ****** -->
-
-
-
-        <!-- ****** Offer Area Start ****** -->
-        {{#all_products}}
-        <section id="product{{product_id}}" class="offer_area height-700 section_padding_100 bg-img" style="background-image: url({{product_image}}); background-size: auto;">
-            <div class="container h-100">
-                <div class="row h-100 align-items-end justify-content-end">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <div class="offer-content-area wow fadeInUp" data-wow-delay="1s">
-                            <h2>{{product_name}}<span class="karl-level">Hot</span></h2>
-                            <p>{{product_description}}</p>
-                            <div class="offer-product-price">
-                                <h3><span class="regular-price">$2550.90</span>{{product_price}}</h3>
-                            </div>
-                            <a href="product-page.php?product_id={{product_id}}" class="btn karl-btn mt-30">Buy Now</a>
-                        </div>
-                    </div>
+            <!-- / Price Filter -->
+    
+            <!-- Brands Filter -->
+            <div class="py-4 widget-filter border-top">
+              <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-modal-brands" role="button" aria-expanded="true"
+                aria-controls="filter-modal-brands">
+                Brands
+              </a>
+              <div id="filter-modal-brands" class="collapse show">
+                <div class="input-group my-3 py-1">
+                  <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search"
+                    aria-label="Search">
+                  <span class="input-group-text bg-transparent p-2 position-absolute top-10 end-0 border-0 z-index-20"><i
+                      class="ri-search-2-line text-muted"></i></span>
                 </div>
+                <div class="simplebar-wrapper">
+                  <div class="filter-options" data-pixr-simplebar>
+                    <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-0">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-0">Adidas  <span
+                                class="text-muted ms-1 fs-9">(21)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-1">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-1">Asics  <span
+                                class="text-muted ms-1 fs-9">(13)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-2">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-2">Canterbury  <span
+                                class="text-muted ms-1 fs-9">(18)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-3">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-3">Converse  <span
+                                class="text-muted ms-1 fs-9">(25)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-4">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-4">Donnay  <span
+                                class="text-muted ms-1 fs-9">(11)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-5">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-5">Nike  <span
+                                class="text-muted ms-1 fs-9">(19)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-6">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-6">Millet  <span
+                                class="text-muted ms-1 fs-9">(24)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-7">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-7">Puma  <span
+                                class="text-muted ms-1 fs-9">(11)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-8">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-8">Reebok  <span
+                                class="text-muted ms-1 fs-9">(19)</span></label>
+                    </div>                <div class="form-group form-check-custom mb-1">
+                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-9">
+                        <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                            for="filter-brands-modal-9">Under Armour  <span
+                                class="text-muted ms-1 fs-9">(24)</span></label>
+                    </div>              </div>
+                </div>
+              </div>
             </div>
-        </section>
-        {{/all_products}}
-        <!-- ****** Offer Area End ****** -->
-
-        <!-- ****** Popular Brands Area Start ****** -->
-        <section class="karl-testimonials-area section_padding_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section_heading text-center">
-                            <h2>Testimonials</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8">
-                        <div class="karl-testimonials-slides owl-carousel">
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Area -->
-                            <div class="single-testimonial-area text-center">
-                                <span class="quote">"</span>
-                                <h6>Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
-                                <div class="testimonial-info d-flex align-items-center justify-content-center">
-                                    <div class="tes-thumbnail">
-                                        <img src="img/bg-img/tes-1.jpg" alt="">
-                                    </div>
-                                    <div class="testi-data">
-                                        <p>Michelle Williams</p>
-                                        <span>Client, Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <!-- / Brands Filter -->
+    
+            <!-- Sizes Filter -->
+            <div class="py-4 widget-filter border-top">
+              <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-modal-sizes" role="button" aria-expanded="true"
+                aria-controls="filter-modal-sizes">
+                Sizes
+              </a>
+              <div id="filter-modal-sizes" class="collapse show">
+                <div class="filter-options mt-3">
+                  <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-0">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-0">6.5</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-1">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-1">7</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-2">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-2">7.5</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-3">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-3">8</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-4">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-4">8.5</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-5">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-5">9</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-6">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-6">9.5</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-7">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-7">10</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-8">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-8">10.5</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-9">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-9">11</label>
+                  </div>              <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                      <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-10">
+                      <label class="form-check-label fw-normal" for="filter-sizes-modal-10">11.5</label>
+                  </div>            </div>
+              </div>
             </div>
-        </section>
-        <!-- ****** Popular Brands Area End ****** -->
-
-        <!-- ****** Footer Area Start ****** -->
-        <footer class="footer_area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="single_footer_area">
-                            <div class="footer-logo">
-                                <img src="img/core-img/logo.png" alt="">
-                            </div>
-                            <div class="copywrite_text d-flex align-items-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                        <div class="single_footer_area">
-                            <ul class="footer_widget_menu">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Our Policies</a></li>
-                                <li><a href="#">Afiliates</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Area Start -->
-                    <div class="col-12 col-lg-5">
-                        <div class="single_footer_area">
-                            <div class="footer_heading mb-30">
-                                <h6>Subscribe to our newsletter</h6>
-                            </div>
-                            <div class="subscribtion_form">
-                                <form action="#" method="post">
-                                    <input type="email" name="mail" class="mail" placeholder="Your email here">
-                                    <button type="submit" class="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-
-                <!-- Footer Bottom Area Start -->
-                <div class="footer_bottom_area">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="footer_social_area text-center">
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- / Sizes Filter -->
+    
+            <!-- Colour Filter -->
+            <div class="py-4 widget-filter border-top">
+              <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-modal-colour" role="button" aria-expanded="true"
+                aria-controls="filter-modal-colour">
+                Colour
+              </a>
+              <div id="filter-modal-colour" class="collapse show">
+                <div class="filter-options mt-3">
+                  <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-primary">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-0">
+                      <label class="form-check-label" for="filter-colours-modal-0"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-success">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-1">
+                      <label class="form-check-label" for="filter-colours-modal-1"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-danger">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-2">
+                      <label class="form-check-label" for="filter-colours-modal-2"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-info">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-3">
+                      <label class="form-check-label" for="filter-colours-modal-3"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-warning">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-4">
+                      <label class="form-check-label" for="filter-colours-modal-4"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-dark">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-5">
+                      <label class="form-check-label" for="filter-colours-modal-5"></label>
+                  </div>              <div class="form-group d-inline-block mr-1 mb-1 form-check-solid-bg-checkmark form-check-custom form-check-secondary">
+                      <input type="checkbox" class="form-check-color-input" id="filter-colours-modal-6">
+                      <label class="form-check-label" for="filter-colours-modal-6"></label>
+                  </div>            </div>
+              </div>
             </div>
-        </footer>
-        <!-- ****** Footer Area End ****** -->
+            <!-- / Colour Filter -->
+          </div>
+          <!-- / Filters-->
+    
+          <!-- Filter Button-->
+          <div class="border-top pt-3">
+            <a href="#" class="btn btn-dark mt-2 d-block hover-lift-sm hover-boxshadow" data-bs-dismiss="offcanvas" aria-label="Close">Done</a>
+          </div>
+          <!-- /Filter Button-->
+        </div>
+      </div>
     </div>
-    <!-- /.wrapper end -->
-
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
 </body>
 
 </html>

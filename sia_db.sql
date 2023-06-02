@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2023 at 04:19 PM
+-- Generation Time: Jun 02, 2023 at 04:51 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -120,7 +120,7 @@ CREATE TABLE `ptg_users` (
 --
 
 INSERT INTO `ptg_users` (`user_id`, `first_name`, `last_name`, `address`, `email`, `password`, `contact_number`) VALUES
-(1, 'Micoh', 'Yabut', 'angeles city', 'micoh@email.com', '1234', '09366776982');
+(1, 'Micoh', 'Yabut', 'angeles city', 'micoh@email.com', '1234', '09123456789');
 
 --
 -- Indexes for dumped tables
@@ -177,13 +177,13 @@ ALTER TABLE `ptg_users`
 -- AUTO_INCREMENT for table `ptg_orders`
 --
 ALTER TABLE `ptg_orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `ptg_order_details`
 --
 ALTER TABLE `ptg_order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `ptg_payments`
