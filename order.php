@@ -9,8 +9,9 @@ $stripe = new \Stripe\StripeClient(
   );
 
 try {
-  $checkout = $stripe->checkout->sessions->all(['limit' => 1]);
-
+  //$checkout = $stripe->checkout->sessions->all(['limit' => 1]);
+  $checkout = $stripe->paymentIntents->all(['limit' => 1]);
+  
   $jsonData = json_encode($checkout);
   file_put_contents("checkout_session.json", $jsonData);
 
