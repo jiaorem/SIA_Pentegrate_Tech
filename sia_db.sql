@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2023 at 04:51 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Jun 04, 2023 at 12:55 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `ptg_cart_items` (
   `product_id` int(11) NOT NULL,
   `total_price` decimal(10,2) NOT NULL,
   `cart_item_quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -45,7 +45,15 @@ CREATE TABLE `ptg_orders` (
   `user_id` int(11) NOT NULL,
   `order_status` varchar(15) NOT NULL,
   `order_date` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ptg_orders`
+--
+
+INSERT INTO `ptg_orders` (`order_id`, `user_id`, `order_status`, `order_date`) VALUES
+(33, 1, 'Checked Out', '2023-06-04'),
+(34, 1, 'Checked Out', '2023-06-04');
 
 -- --------------------------------------------------------
 
@@ -58,7 +66,15 @@ CREATE TABLE `ptg_order_details` (
   `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `product_quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ptg_order_details`
+--
+
+INSERT INTO `ptg_order_details` (`id`, `order_id`, `product_id`, `product_quantity`) VALUES
+(32, 33, 1, 1),
+(33, 34, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -75,7 +91,7 @@ CREATE TABLE `ptg_payments` (
   `card_verification_code` varchar(3) NOT NULL,
   `payment_date` date NOT NULL,
   `total_price` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -89,15 +105,15 @@ CREATE TABLE `ptg_products` (
   `product_price` decimal(10,2) NOT NULL,
   `product_description` varchar(255) NOT NULL,
   `product_image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `ptg_products`
 --
 
 INSERT INTO `ptg_products` (`product_id`, `product_name`, `product_price`, `product_description`, `product_image`) VALUES
-(1, 'Corsair K95 RGB Platinum XT', '13320.00', 'The CORSAIR K95 RGB PLATINUM XT Mechanical Gaming Keyboard immerses your desktop in dynamic per-key RGB backlighting, equipped with a double-shot PBT keycap set and six dedicated macro keys with Elgato Stream Deck software integration.', 'images/corsair.jpg'),
-(2, 'Logitech G Pro X', '7999.00', 'The tournament-proven PRO design, now with your choice of swappable pro-grade GX mechanical switches: Clicky, Tactile and Linear. Built to win in collaboration with the world’s top esports athletes.', 'images/logitech.jpg');
+(1, 'Corsair K95 RGB Platinum XT', '13320.00', 'The CORSAIR K95 RGB PLATINUM XT Mechanical Gaming Keyboard immerses your desktop in dynamic per-key RGB backlighting, equipped with a double-shot PBT keycap set and six dedicated macro keys with Elgato Stream Deck software integration.', 'images/corsair.png'),
+(2, 'Logitech G Pro X', '7999.00', 'The tournament-proven PRO design, now with your choice of swappable pro-grade GX mechanical switches: Clicky, Tactile and Linear. Built to win in collaboration with the world’s top esports athletes.', 'images/logitech.png');
 
 -- --------------------------------------------------------
 
@@ -113,7 +129,7 @@ CREATE TABLE `ptg_users` (
   `email` varchar(55) NOT NULL,
   `password` varchar(15) NOT NULL,
   `contact_number` varchar(13) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `ptg_users`
@@ -177,13 +193,13 @@ ALTER TABLE `ptg_users`
 -- AUTO_INCREMENT for table `ptg_orders`
 --
 ALTER TABLE `ptg_orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `ptg_order_details`
 --
 ALTER TABLE `ptg_order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `ptg_payments`
