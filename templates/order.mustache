@@ -48,27 +48,83 @@
 </head>
 <body class="">
 
+ <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark flex-column border-0" style="margin-bottom: 50px;">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+    
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="index.php">
+                        <div class="d-flex align-items-center">
+                            <img width="65" height="65" src="images/logo.png"></img>
+                        </div>
+                    </a>
+                    <!-- / Logo-->
+    
+                    <!-- Navbar Icons-->
+                    <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks" style="color: white;">
+    
+                        <!-- Mobile Nav Toggler-->
+                        <li class="d-lg-none">
+                            <span class="nav-link text-body d-flex align-items-center cursor-pointer" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menu</span>
+                        </li>
+                        <!-- /Mobile Nav Toggler-->
+    
+                        <!-- Navbar Search-->
+                        
+                        <!-- /Navbar Search-->
+
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="index.php"><FONT color=white>
+                                HOME
+                            </a>
+                        </li>
+    
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="product.php"><FONT color=white>
+                                Products
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+    
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="cart.php"><FONT color=white>
+                                BAG
+                            </a>
+                        </li>
+                        <!-- /Navbar Cart Icon-->
+    
+                    </ul>
+                    <!-- Navbar Icons-->                
+    
+                    <!-- Main Navigation-->
+                    <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                        id="navbarNavDropdown">
+    
+                       
+                    </div>
+                    <!-- / Main Navigation-->
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar-->    <!-- / Navbar-->
+
     <!-- Main Section-->
     <section class="mt-0 overflow-lg-hidden  vh-lg-100">
         <!-- Page Content Goes Here -->
         <div class="container">
             <div class="row g-0 vh-lg-100">
                 <div class="col-12 col-lg-7 pt-5 pt-lg-10">
-                    <div class="pe-lg-5">
-                        <!-- Logo-->
-                        <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="index.php">
-                            <div class="d-flex align-items-center">
-                                <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
-                            </div>
-                        </a>
-                        <!-- / Logo-->
-                        <nav class="d-none d-md-block">
-                            <ul class="list-unstyled d-flex justify-content-start mt-4 align-items-center fw-bolder small">
-                                <li class="me-4"><a class="nav-link-checkout active" href="order-page.php">Your Order</a></li>
-                            </ul>
-                        </nav>                        
+                    <div class="pe-lg-5">                   
                             <div class="mx-auto" style="width: 1250px;">
-                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Your Order </h3>
+                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4" style="color:#111827;">Your Order </h3>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
                                         <tbody class="border-0"> 
@@ -79,8 +135,8 @@
                                                 </div>
                                                 <div class="col-9 offset-1">
                                                     <div>
-                                                        <h6 class="justify-content-between d-flex align-items-start mb-2"> {{ product_name }} </h6>
-                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9"> Qty: {{ product_quantity }}</span>
+                                                        <h6 class="justify-content-between d-flex align-items-start mb-2" style="color:#111827;"> {{ product_name }} </h6>
+                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9" style="color:#111827;"> Qty: {{ product_quantity }}</span>
                                                     </div>
                                                     <p class="fw-bolder text-end text-muted m-0">{{ product_price }}</p>
                                                 </div>

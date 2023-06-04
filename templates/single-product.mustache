@@ -58,15 +58,15 @@
 
      <!-- Navbar -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark flex-column border-0  ">
         <div class="container-fluid">
             <div class="w-100">
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
     
                     <!-- Logo-->
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="index.php">
                         <div class="d-flex align-items-center">
-                            <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
+                            <img width="65" height="65" src="images/logo.png"></img>
                         </div>
                     </a>
                     <!-- / Logo-->
@@ -87,20 +87,20 @@
                         <!-- /Navbar Search-->
 
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="index.php">
+                            <a class="nav-link text-body" href="index.php"><FONT color=#FFFFFF>
                                 HOME
                             </a>
                         </li>
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="product.php">
+                            <a class="nav-link text-body" href="product.php"><FONT color=#FFFFFF>
                                 Products
                             </a>
                         </li>
 
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="cart.php">
+                            <a class="nav-link text-body" href="cart.php"><FONT color=#FFFFFF>
                                 BAG
                             </a>
                         </li>
@@ -129,19 +129,7 @@
     {{#product}}
     <section class="mt-0 ">
         <!-- Page Content Goes Here -->            
-        
-        <!-- Breadcrumbs-->
-        <div class="bg-dark py-6">
-            <div class="container-fluid">
-                <nav class="m-0" aria-label="breadcrumb">
-                    <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item breadcrumb-light"><a href="index.php">Home</a></li>
-                      <li class="breadcrumb-item breadcrumb-light"><a href="product.php">Products</a></li>
-                      <li class="breadcrumb-item  breadcrumb-light active" aria-current="page"> {{product_name}}</li>
-                    </ol>
-                </nav>            </div>
-        </div>
-        <!-- / Breadcrumbs-->
+    
 
         <div class="container-fluid mt-5">
 
@@ -174,9 +162,9 @@
                             </div>
                             </div>
                             
-                            <h1 class="mb-1 fs-2 fw-bold" >{{product_name}}</h1>
+                            <h1 class="mb-1 fs-2 fw-bold" style="color:#111827;" >{{product_name}}</h1>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-4 m-0">{{product_price}}</p>
+                                <p class="fs-4 m-0" style="color:#111827;">{{product_price}}</p>
                             </div>
                             <div class="border-top mt-4 mb-3 product-option">
                                 <small class="text-uppercase pt-4 d-block fw-bolder">
@@ -231,7 +219,7 @@
                                   </h2>
                                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProduct">
                                     <div class="accordion-body">
-                                        <p class="m-0">{{product_description}}</p>
+                                        <p class="m-0" style="color:#111827;">{{product_description}}</p>
                                     </div>
                                   </div>
                                 </div>
