@@ -11,6 +11,7 @@ $stripe = new \Stripe\StripeClient(
 try {
   //$checkout = $stripe->checkout->sessions->all(['limit' => 1]);
   $checkout = $stripe->paymentIntents->all(['limit' => 1]);
+<<<<<<< HEAD
   //$data = json_decode($checkout->data, true);
   //$amount_total = ["amount_total" => 999.00];
   $amount = $checkout['data'][0]['amount'];
@@ -23,6 +24,11 @@ try {
   //var_dump($updated_json);
   //$jsonData = json_encode($checkout);
   file_put_contents("checkout_session.json", $updated_json);
+=======
+  
+  $jsonData = json_encode($checkout);
+  file_put_contents("checkout_session.json", $jsonData);
+>>>>>>> bc6220835f2f1b15542ef59f5a07bb0a8e267120
 
   // $session = $checkout->data[0];
   // $amount_total = $session->amount_total;
