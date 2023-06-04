@@ -56,7 +56,7 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
     
                     <!-- Logo-->
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="index.php">
                         <div class="d-flex align-items-center">
                             <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </div>
@@ -79,20 +79,20 @@
                         <!-- /Navbar Search-->
 
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./index.html">
+                            <a class="nav-link text-body" href="index.php">
                                 HOME
                             </a>
                         </li>
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./category.html">
+                            <a class="nav-link text-body" href="product.php">
                                 Products
                             </a>
                         </li>
 
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./cart.html">
+                            <a class="nav-link text-body" href="cart.php">
                                 BAG
                             </a>
                         </li>
@@ -109,31 +109,7 @@
                     <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
                         id="navbarNavDropdown">
     
-                        <!-- Menu-->
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            
-                            
-                              <li class="nav-item">
-                                <a class="nav-link" href="./category.html" role="button">
-                                  Sale
-                                </a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Category</a></li>
-                                  <li><a class="dropdown-item" href="./product.html">Product</a></li>
-                                  <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
-                                  <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
-                                  <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                                  <li><a class="dropdown-item" href="./register.html">Register</a></li>
-                                  <li><a class="dropdown-item" href="./forgotten-password.html">Forgotten Password</a></li>
-                                </ul>
-                              </li>
-                          </ul>                    <!-- / Menu-->
+                        
     
                     </div>
                     <!-- / Main Navigation-->
@@ -167,8 +143,8 @@
                     <div>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                              <li class="breadcrumb-item"><a href="category.html">Products</a></li>
+                              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                              <li class="breadcrumb-item"><a href="product.php">Products</a></li>
                               
                             </ol>
                         </nav>        <h1 class="fw-bold fs-3 mb-2">Gaming Keyboards</h1>
@@ -193,37 +169,64 @@
                     </div>
                 </div>            <!-- /Category Toolbar-->
 
-            
             <!-- Products-->
             <div class="row g-4">
+                    {{#all_products}}
                     <div class="col-12 col-sm-6 col-lg-4">
                         <!-- Card Product-->
                         <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
-                        {{#all_products}}
                             <div class="card-img position-relative">
                                 <div class="card-badges">
                                         <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/logitech.png" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" style="width:100px; height:350px;" src="{{product_image}}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Add to Cart</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product-page.php?product_id={{ product_id }}">{{ product_name }}</a>
+                                <a class="text-decoration-none link-cover" href="product-page.php?product_id={{product_id}}">{{product_name}}</a>
                                
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">{{ product_price }}</s> <span class="text-danger">{{ total_price }}</span></p>
+                                        <p class="mt-2 mb-0 small"><s class="text-muted">₱18,326</s> <span class="text-danger">₱{{product_price}}</span></p>
                             </div>
-                        {{/all_products}}
                         </div>
                         <!--/ Card Product-->
                     </div>
+                    {{/all_products}}
 
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- Card Product-->
+                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                <div class="card-badges">
+                                        <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> New In</span>
+                                </div>
+                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                <picture class="position-relative overflow-hidden d-block bg-light">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" style="width:100px; height:350px;" src="images/hyperx.PNG" alt="">
+                                </picture>
+                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                        <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Add to Cart</button>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <a class="text-decoration-none link-cover" href="./corsproduct.html" style="margin-top:50px;">HYPER X</a>
+                                
+                                        <p class="mt-2 mb-0 small">$275.45</p>
+                            </div>
+                        </div>
+                        <!--/ Card Product-->
+                    </div>
+                    </div>
+                    
+                    
+                   
+
+        
             <!-- / Products-->
-            
 
            
         </div>
