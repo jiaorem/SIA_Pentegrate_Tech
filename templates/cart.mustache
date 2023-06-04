@@ -122,7 +122,7 @@
             <div class="row g-0 vh-lg-100">
                 <div class="col-12 col-lg-7 pt-5 pt-lg-10">
                     <div class="pe-lg-5">                  
-                            <div class="mt-5">
+                            <div class="mt-1">
                             <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Your Cart</h3>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
@@ -137,7 +137,7 @@
                                                         <h6 class="justify-content-between d-flex align-items-start mb-2"> {{ product_name }} </h6>
                                                         <span class="d-block text-muted fw-bolder text-uppercase fs-9"> Qty: {{ cart_item_quantity }}</span>
                                                     </div>
-                                                    <p class="fw-bolder text-end text-muted m-0">{{ product_price }}</p>
+                                                    <p class="fw-bolder text-end text-muted m-0">₱{{ product_price }}</p>
                                                 </div>
                                             </div>        
                                         {{/ all_carts }}                            
@@ -147,10 +147,10 @@
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <div>
-                                        <a href="index.php" class="btn btn-dark">Continue Shopping</a>
+                                        <a href="delete-cart.php" class="btn btn-danger">Clear Cart</a>
                                     </div>
                                     <div>
-                                        <a href="delete-cart.php" class="btn btn-danger">Clear Cart</a>
+                                        <a href="product.php" class="btn btn-dark">Continue Shopping</a>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                                 <div>
                                     <p class="m-0 fw-bold fs-5"><FONT color=#111827>Grand Total</p>
                                 </div>
-                                <p class="m-0 fs-5 fw-bold"><FONT color=#111827>{{cart_total}}</p>
+                                <p class="m-0 fs-5 fw-bold"><FONT color=#111827>₱{{cart_total}}</p>
                             </div>
                         </div>
                         <a href="checkout.php" class="btn btn-dark w-100 text-center" role="button">Proceed to checkout</a>    
