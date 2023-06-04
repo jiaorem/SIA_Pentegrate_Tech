@@ -11,40 +11,19 @@ $stripe = new \Stripe\StripeClient(
 try {
   //$checkout = $stripe->checkout->sessions->all(['limit' => 1]);
   $checkout = $stripe->paymentIntents->all(['limit' => 1]);
-<<<<<<< HEAD
-  //$data = json_decode($checkout->data, true);
-  //$amount_total = ["amount_total" => 999.00];
+
   $amount = $checkout['data'][0]['amount'];
   $amount_total = number_format($amount / 100, 2);
-  //$checkout['data'][0]['amount'] = $amount_total;
   $checkout['amount_total'] = $amount_total;
+
   $updated_json = json_encode($checkout);
-  //array_push($checkout, $amount_total);
-  //$checkoutt = $checkout->data;
-  //var_dump($updated_json);
-  //$jsonData = json_encode($checkout);
   file_put_contents("checkout_session.json", $updated_json);
-=======
-  
-  $jsonData = json_encode($checkout);
-  file_put_contents("checkout_session.json", $jsonData);
->>>>>>> bc6220835f2f1b15542ef59f5a07bb0a8e267120
-
-  // $session = $checkout->data[0];
-  // $amount_total = $session->amount_total;
-  // $id = $session->id;
-
-  // $currency = $session->currency;
-  // $email = $session->customer_details->email;
-  // $name = $session->customer_details->name;
-  // $payment_intent = $session->payment_intent;
 
   $orders = new Order('','','');
   $orders->setConnection($connection);
   $orders->recordOrder();
   $order_detail_id = $orders->getOrderId(1);
   $detail_id = end($order_detail_id);
-  //var_dump($lastElement);
 
   $carts = new Cart('','', '', '');
   $carts->setConnection($connection);
